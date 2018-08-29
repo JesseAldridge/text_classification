@@ -2,12 +2,12 @@ from sklearn import model_selection, preprocessing, linear_model, naive_bayes, m
 from sklearn.feature_extraction import text
 # from sklearn import decomposition, ensemble
 
-import pandas #, xgboost, numpy, textblob, string
+import pandas, numpy #, xgboost, textblob, string
 from keras.preprocessing import text as keras_text, sequence
 # from keras import layers, models, optimizers
 
 print 'loading dataset...'
-with open('corpus.txt') as f:
+with open('data/corpus.txt') as f:
   data = f.read()
 labels, texts = [], []
 for i, line in enumerate(data.splitlines()):
